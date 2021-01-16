@@ -1,0 +1,19 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    display: flexbox;
+
+}
+.body{
+    background-color:#0c3866;
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #fff9ea;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container{
+
+}
+.card{}
