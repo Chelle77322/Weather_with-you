@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep the weather with you</title>
+<!-- Links to stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel = "stylesheet" href="assets/css/style.css"/>
+
+
+</head>
+<body>
+  <!-- Header Section-->
+  <header class = "jumbotron">
+    <h1 class = "display-4"> Take the Weather with You
+    </h1>
+<p id = "currentWeather" class = "lead"> Search for any city to find out the weather</p>
+</header>
+<!--Main container-->
+<div class = "container-fluid">
+  <div class = "row d-flex justify-content-center">
+    <div class = "col-md-6">
+      <div class = "card fit-height">
+        <div class = "card-body">
+          <h4 class = "card-title">Search for a City</h4>
+<!-- This is the user input section-->          
+          <form id = "formCity">
+            <div class = "form-group">
+              <input type = "text" class = "form-control" id = "cityInput">
+            </div>
+          <button class = "btn btn-info searchBtn">Search</button>
+          <button class = "btn btn-danger historyBtn">History</button>
+          </form>
+          <ul class = "history"></ul>
+        </div>
+      </div>
+    </div>
+ <!-- This displays the current city's weather details-->   
+    <div class = "col-md-6">
+      <div class = "card">
+        <div class = "card-body fit-width">
+          <h5 class = "card-title currentCity">City</h2>
+          <img id = "weatherIcon"/>
+          <p class="temp">Temp:</p>
+          <p class="humidity">Humidity:</p>
+          <p class="windspeed">Wind Speed:</p>
+          <span><p class="UVIndex">UV Index:</p></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- This displays information about the 7 day forecast-->  
+<div class="row d-flex justify-content-center">
+ 
+  <div class="card-forecast">
+          <div class="card-body">
+              <h5 class="card-title forecast_day1">Day1:</h5>
+              <img class="forecast1-img"/>
+              <p class="card-text forecast_temp1">Temp:</p>
+              <p class="card-text forecast_humidity1">Humidity:</p>
+          </div>
+      </div>
+      <div class="card-forecast">
+          <div  class="card-body">
+              <h5 class="card-title forecast_day2">Day2:</h5>
+              <img class="forecast2-img"/>
+              <p class="card-text forecast_temp2">Temp:</p>
+              <p class="card-text forecast_humidity2">Humidity:</p>
+          </div>
+      </div>
+      <div class="card-forecast">
+          <div  class="card-body">
+              <h5 class="card-title forecast_day3">Day3:</h5>
+              <img class="forecast3-img"/>
+              <p class="card-text forecast_temp3">Temp:</p>
+              <p class="card-text forecast_humidity3">Humidity:</p>
+          </div>
+      </div>   
+      <div class="card-forecast">
+          <div  class="card-body">
+              <h5 class="card-title forecast_day4">Day4:</h5>
+              <img class="forecast4-img"/>
+              <p class="card-text forecast_temp4">Temp:</p>
+              <p class="card-text forecast_humidity4">Humidity:</p>
+          </div>
+      </div>    
+      <div class="card-forecast">
+          <div  class="card-body">
+              <h5 class="card-title forecast_day5">Day5:</h5>
+              <img class="forecast5-img"/>
+              <p class="card-text forecast_temp5">Temp:</p>
+              <p class="card-text forecast_humidity5">Humidity:</p>
+          </div>
+      </div>
+      <div class="card-forecast">
+        <div  class="card-body">
+            <h5 class="card-title forecast_day6">Day6:</h5>
+            <img class="forecast6-img"/>
+            <p class="card-text forecast_temp6">Temp:</p>
+            <p class="card-text forecast_humidity6">Humidity:</p>
+        </div>
+    </div>
+    <div class="card-forecast">
+      <div  class="card-body">
+          <h5 class="card-title forecast_day7">Day7:</h5>
+          <img class="forecast7-img"/>
+          <p class="card-text forecast_temp7">Temp:</p>
+          <p class="card-text forecast_humidity7">Humidity:</p>
+      </div>
+  </div>
+    
+</div>
+</div>
+          
+ <!--Links to script files-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ <script type="text/javascript" src= "./assets/script/script.js"></script> 
+
+</div>
+</body>
+</html>

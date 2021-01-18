@@ -1,0 +1,62 @@
+
+body{
+    background-color:#b1d4e5;
+    color:#0c3866;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+
+}
+.jumbotron {
+    text-align: center;
+    background-image: url("../images/sunny_sky.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    border-radius: 0;
+    color: #fcaf45;
+    font-weight:bolder;
+    font-style: oblique;
+    
+}  
+
+.card{
+    width: 20rem;
+    display: flexbox;
+    padding: 5px;
+    margin-top:5px;
+    background-color: #fcaf45;
+    border-radius: 10px;
+    border-color:#0c3866;
+    position: relative;
+    border-style: groove;
+    border-width: 3px;
+
+}
+.card-forecast{
+    width: 10rem;
+    display: flexbox;
+    padding: 5px;
+    margin: 10px;
+    background-color: #fcaf45;
+    border-radius: 10px;
+    border-color:#0c3866;
+    border-style: groove;
+    border-width: 3px;
+    position: inherit;
+}
+.container-fluid{
+    margin-top: 10px;
+    background-image: url("../images/sunny_sky.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.high{
+    background-color:#ce181e;
+}
+.moderate{
+    background-color:#ffe600;
+}
+.low{
+    background-color: #0db14b;
+}
